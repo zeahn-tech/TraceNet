@@ -57,7 +57,7 @@ export default function App() {
 
   return (
     <QueryClientProvider client={queryClient}>
-      <BrowserRouter>
+      <BrowserRouter basename="/TraceNet">
         <ScrollToTop />
         <Routes>
           <Route path="/login" element={<LoginPage />} />
