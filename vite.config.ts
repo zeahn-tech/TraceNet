@@ -3,6 +3,8 @@ import react from '@vitejs/plugin-react';
 import { VitePWA } from 'vite-plugin-pwa';
 
 export default defineConfig({
+  base: "/TraceNet/"
+  
   plugins: [
     react(),
     VitePWA({
@@ -13,8 +15,8 @@ export default defineConfig({
         short_name: 'TraceNet',
         description:
           'A public safety collaboration platform connecting citizens and law enforcement to find missing persons, locate wanted individuals, report suspicious activity, and share verified safety alerts.',
-        start_url: '/',
-        scope: '/',
+        start_url: '/TraceNet/',
+        scope: '/TraceNet/',
         display: 'standalone',
         orientation: 'portrait',
         background_color: '#0B1F3A',
