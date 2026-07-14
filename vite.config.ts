@@ -22,7 +22,6 @@ export default defineConfig({
       manifest: {
         name: 'TraceNet — Together for Safer Communities',
         short_name: 'TraceNet',
-
         description:
           'A public safety collaboration platform connecting citizens and law enforcement.',
 
@@ -52,10 +51,6 @@ export default defineConfig({
       workbox: {
         navigateFallback: '/TraceNet/index.html',
         cleanupOutdatedCaches: true,
-      },
-
-      devOptions: {
-        enabled: true,
       },
     }),
   ],
